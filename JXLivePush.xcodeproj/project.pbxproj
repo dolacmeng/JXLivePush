@@ -12,6 +12,7 @@
 		5D0F7D0321FD691A009027F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0F7D0121FD691A009027F1 /* Main.storyboard */; };
 		5D0F7D0521FD691A009027F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D0F7D0421FD691A009027F1 /* Assets.xcassets */; };
 		5D0F7D0821FD691A009027F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0F7D0621FD691A009027F1 /* LaunchScreen.storyboard */; };
+		A39EE3CE934423CC5C7E8F17 /* Pods_JXLivePush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DBB64913B527BD6728C0BC /* Pods_JXLivePush.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		5D0F7D0421FD691A009027F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D0F7D0721FD691A009027F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D0F7D0921FD691A009027F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63528A04F1826C4349973AA9 /* Pods-JXLivePush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXLivePush.release.xcconfig"; path = "Pods/Target Support Files/Pods-JXLivePush/Pods-JXLivePush.release.xcconfig"; sourceTree = "<group>"; };
+		6E4DFA9C0B0312816CF27B63 /* Pods-JXLivePush.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXLivePush.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JXLivePush/Pods-JXLivePush.debug.xcconfig"; sourceTree = "<group>"; };
+		99DBB64913B527BD6728C0BC /* Pods_JXLivePush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXLivePush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A39EE3CE934423CC5C7E8F17 /* Pods_JXLivePush.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		089649321267BD9DEACF57D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E4DFA9C0B0312816CF27B63 /* Pods-JXLivePush.debug.xcconfig */,
+				63528A04F1826C4349973AA9 /* Pods-JXLivePush.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5D0F7CF121FD691A009027F1 = {
 			isa = PBXGroup;
 			children = (
 				5D0F7CFC21FD691A009027F1 /* JXLivePush */,
 				5D0F7CFB21FD691A009027F1 /* Products */,
+				089649321267BD9DEACF57D5 /* Pods */,
+				D44E1478A57140B0F6BAD4A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = JXLivePush;
 			sourceTree = "<group>";
 		};
+		D44E1478A57140B0F6BAD4A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99DBB64913B527BD6728C0BC /* Pods_JXLivePush.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D0F7D0C21FD691A009027F1 /* Build configuration list for PBXNativeTarget "JXLivePush" */;
 			buildPhases = (
+				04D82EC72CAECDB3D69B0D73 /* [CP] Check Pods Manifest.lock */,
 				5D0F7CF621FD691A009027F1 /* Sources */,
 				5D0F7CF721FD691A009027F1 /* Frameworks */,
 				5D0F7CF821FD691A009027F1 /* Resources */,
+				CECE8EA67CECE29AF77F6CCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04D82EC72CAECDB3D69B0D73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JXLivePush-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CECE8EA67CECE29AF77F6CCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JXLivePush/Pods-JXLivePush-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LFLiveKit/LFLiveKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LFLiveKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JXLivePush/Pods-JXLivePush-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D0F7CF621FD691A009027F1 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		5D0F7D0D21FD691A009027F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E4DFA9C0B0312816CF27B63 /* Pods-JXLivePush.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		5D0F7D0E21FD691A009027F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63528A04F1826C4349973AA9 /* Pods-JXLivePush.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
